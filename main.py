@@ -13,13 +13,13 @@ load_dotenv()
 
 
 # Set API keys
-openai_api_key = os.getenv("OPENAI_API_KEY")
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 azure_api_key = os.getenv("AZURE_API_KEY")
 ENDPOINT = "https://polite-ground-030dc3103.4.azurestaticapps.net/api/v1"
 API_VERSION = "2024-02-01"
 MODEL_NAME = "gpt-35-turbo"
 
-openai_client = OpenAI(api_key=openai_api_key)
+openai_client = OpenAI()
 
 azure_client = AzureOpenAI(
     azure_endpoint=ENDPOINT,

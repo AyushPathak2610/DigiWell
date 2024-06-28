@@ -5,20 +5,25 @@ from pydub import AudioSegment
 import io
 from streamlit_mic_recorder import mic_recorder
 import base64
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+
 
 # Set API keys
-os.environ[
-    "OPENAI_API_KEY"] = "sk-proj-FOJlVo80K8SUOMlxkgwLT3BlbkFJ4pyhlya6X7JCvruoSmok"
-API_KEY = "394c57a3-013f-4ba5-a763-de1f0f3f7bd9"
+openai_api_key = os.getenv("OPENAI_API_KEY")
+azure_api_key = os.getenv("AZURE_API_KEY")
 ENDPOINT = "https://polite-ground-030dc3103.4.azurestaticapps.net/api/v1"
 API_VERSION = "2024-02-01"
 MODEL_NAME = "gpt-35-turbo"
 
-openai_client = OpenAI()
+openai_client = OpenAI(api_key=openai_api_key)
 
 azure_client = AzureOpenAI(
     azure_endpoint=ENDPOINT,
-    api_key=API_KEY,
+    api_key=azure_api_key,
     api_version=API_VERSION,
 )
 

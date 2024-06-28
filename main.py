@@ -176,7 +176,7 @@ if 'session_end' not in st.session_state:
 if 'session_start' not in st.session_state:
     st.session_state.session_start = True
 
-st.title("Mental Health Chatbot")
+st.title("DigiWell")
 
 # Add custom CSS for styling and icons
 st.markdown("""

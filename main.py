@@ -13,8 +13,8 @@ load_dotenv()
 
 
 # Set API keys
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
-azure_api_key = os.getenv("AZURE_API_KEY")
+os.environ["OPENAI_API_KEY"] = "sk-proj-FOJlVo80K8SUOMlxkgwLT3BlbkFJ4pyhlya6X7JCvruoSmok"
+azure_api_key = "394c57a3-013f-4ba5-a763-de1f0f3f7bd9"
 ENDPOINT = "https://polite-ground-030dc3103.4.azurestaticapps.net/api/v1"
 API_VERSION = "2024-02-01"
 MODEL_NAME = "gpt-35-turbo"

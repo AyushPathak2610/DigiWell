@@ -24,8 +24,8 @@ DigiWell is a mental health chatbot designed to engage in therapeutic sessions, 
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/digiwell-mental-health-chatbot.git
-    cd digiwell-mental-health-chatbot
+    git clone https://github.com/AyushPathak2610/DigiWell.git
+    cd DigiWell
     ```
 
 2. Create and activate a virtual environment:
